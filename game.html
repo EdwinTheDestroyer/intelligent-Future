@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Memory Matching Game</title>
+    <style>
+    #game-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 500px;
+  margin: 0 auto;
+}
+
+.card {
+  width: 100px;
+  height: 100px;
+  background-color: #ccc;
+  border: 1px solid #333;
+  margin: 10px;
+}
+
+.card.flipped {
+  background-color: #333;
+  color: white;
+  font-size: 32px;
+  text-align: center;
+  line-height: 100px;
+}
+.card.matched {
+  visibility: hidden;
+}
+
+    </style>
+  </head>
+  <body>
+  <a href="extras.html">Back</a>
+    <h1 style="text-align:center;">Memory Matching Game</h1>
+    <div id="game-container">
+      <div class="card" data-card-value="1"></div>
+      <div class="card" data-card-value="1"></div>
+      <div class="card" data-card-value="2"></div>
+      <div class="card" data-card-value="2"></div>
+      <div class="card" data-card-value="3"></div>
+      <div class="card" data-card-value="3"></div>
+      <div class="card" data-card-value="4"></div>
+      <div class="card" data-card-value="4"></div>
+      <div class="card" data-card-value="5"></div>
+      <div class="card" data-card-value="5"></div>
+      <div class="card" data-card-value="6"></div>
+      <div class="card" data-card-value="6"></div>
+    </div>
+    <script src="game.js"></script>
+  </body>
+  </html>
+
+
+
+
+
