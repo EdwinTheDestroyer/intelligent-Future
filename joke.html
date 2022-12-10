@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Random Joke Generator</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <a href="extras.html">Back</a>
+    <h1>Random Joke Generator</h1>
+    <button id="joke-button">Generate Joke</button>
+    <div id="joke-container"></div>
+
+    <script>
+  // define an array of jokes
+  const jokes = [
+    "Why was the math book sad? Because it had too many problems.",
+    "Why couldn't the bicycle stand up by itself? Because it was two-tired.",
+    "Why was the belt arrested? Because it held up a pair of pants.",
+    "Why was the computer cold? Because it left its Windows open.",
+    "Why did the tomato turn red? Because it saw the salad dressing!",
+    "Why did the computer sneeze? Because it had a virus.",
+    "Why was the computer so smart? Because it had a lot of 'bytes.'"
+  ];
+
+  // select the joke button and joke container elements
+  const jokeButton = document.getElementById("joke-button");
+  const jokeContainer = document.getElementById("joke-container");
+
+  // define the function for generating a random joke
+  function generateJoke() {
+    // get a random joke from the jokes array
+    const randomJoke = jokes[Math.floor(Math.random() * jokes.length)];
+
+    // display the random joke in the joke container
+    jokeContainer.textContent = randomJoke;
+  }
+
+  // add an event listener for the click event on the joke button
+  jokeButton.addEventListener("click", generateJoke);
+</script>
+</body>
+</html>
+
+
+
+
